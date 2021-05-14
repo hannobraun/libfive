@@ -197,7 +197,7 @@ Window::Window(Arguments args)
     });
     show_axes_action->setChecked(settings.value("show-axes", true).toBool());
 
-    auto show_bbox_action = view_menu->addAction("Show Sounding Box(es)");
+    auto show_bbox_action = view_menu->addAction("Show Bounding Box(es)");
     show_bbox_action->setCheckable(true);
     connect(show_bbox_action, &QAction::toggled, [this](bool b) {
         view->showBBox(b);
